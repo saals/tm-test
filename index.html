@@ -4,31 +4,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Simple Starter Description" />
-
     <title>Apple MacBook Air</title>
-
     <link rel="icon" href="images/favicon.png" />
-
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Poppins:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    /> -->
-
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
-
     <script src="js/common.js" defer></script>
-
-    <!-- <style>
-      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Poppins:wght@400;500;600;700&display=swap");
-    </style> -->
   </head>
 
   <body>
     <div class="last-chance">Last chance + Free delivery 2-4 days in UK</div>
-
     <header class="header">
       <div class="container">
         <div class="header__wrap">
@@ -41,13 +25,11 @@
               />
             </a>
           </div>
-
-          <button class="menu">
+          <button class="menu header__menu">
             <img src="./images/burger.png" alt="menu" />
           </button>
         </div>
-
-        <!-- <nav class="nav">
+        <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
               <a href="#" class="nav__link">Go to product page</a>
@@ -62,26 +44,20 @@
               <a href="#" class="nav__link">FAQ</a>
             </li>
           </ul>
-        </nav> -->
+        </nav>
       </div>
-
-      <!-- <hr /> -->
     </header>
-
     <main class="main">
       <section class="hero">
         <div class="container">
           <h1 class="visually-hidden">Apple MacBook Air</h1>
-
           <div class="hero__text">
             <p>Power. It’s in the Air.</p>
             <p>Limited offer just for today</p>
           </div>
-
           <div class="informer">
             <div class="rating">
               <span class="rating__star">
-                <!-- TODO cloneElement -->
                 <img src="./images/star-gold.png" alt="star" />
                 <img src="./images/star-gold.png" alt="star" />
                 <img src="./images/star-gold.png" alt="star" />
@@ -92,27 +68,22 @@
             </div>
             <div class="reveiws">
               10000+ reviews
-              <a href="#" class="reveiws__link">
-                <img src="./images/arrow-down-accent.png" alt="show all" />
+              <a href="#footer" class="reveiws__link">
+                <img src="./images/arrow-down-accent.png" alt="show reviews" />
               </a>
             </div>
           </div>
-
-          <!-- TODO совместить price cloneElement -->
           <div class="price">
             <span class="price__current">£199</span>
             <span class="price__old">£1099</span>
           </div>
-
           <div class="hero__img">
             <img src="./images/macbook.png" alt="MacBook" />
           </div>
-
           <div class="trustpilot">
             <div class="trustpilot__express">
               <img src="./images/express.png" alt="logo Express Shipping" />
             </div>
-
             <div class="trustpilot__trustpilot">
               <div class="trustpilot__stars">
                 <span class="trustpilot__img">
@@ -134,7 +105,6 @@
               Over 10,000 reviews on
               <img src="./images/trustpilot.png" alt="star trustpilot" />
             </div>
-
             <div class="trustpilot__excellent">
               <span>4.9</span>
               out of 5
@@ -143,23 +113,25 @@
           </div>
         </div>
       </section>
-
       <section class="product">
         <div class="container">
-          <div class="product__image slider">
+          <div
+            title="клик: правая часть-вперед, левая-назад"
+            class="product__image slider"
+          >
             <div class="slider__wrap">
-              <div class="slider__item">
-                <img src="./images//slider-1.jpg" alt="top view of MacBook" />
+              <div class="slider__item show">
+                <img src="./images/slider-1.jpg" alt="top view of MacBook" />
               </div>
-              <!-- <div class="slider__item">
-                  <img src="./images//slider-2.jpg" alt="top view of MacBook" />
-                </div>
-                <div class="slider__item">
-                  <img src="./images//slider-3.jpg" alt="left view of MacBook" />
-                </div>
-                <div class="slider__item">
-                  <img src="./images//slider-4.jpg" alt="left view of MacBook" />
-                </div> -->
+              <div class="slider__item">
+                <img src="./images//slider-2.jpg" alt="top view of MacBook" />
+              </div>
+              <div class="slider__item">
+                <img src="./images//slider-3.jpg" alt="left view of MacBook" />
+              </div>
+              <div class="slider__item">
+                <img src="./images//slider-4.jpg" alt="left view of MacBook" />
+              </div>
             </div>
             <div class="indicator">
               <div class="indicator__part"></div>
@@ -185,7 +157,10 @@
               triggers in supported games
             </p>
           </div>
-          <div class="timer">sale ends in <span>17:34:53</span></div>
+          <div class="timer">
+            sale ends in
+            <span class="timer__expire">--:--:--</span>
+          </div>
           <div class="product__price price">
             <span class="price__current">£199</span>
             <span class="price__old">
@@ -199,7 +174,37 @@
               <img src="./images/afterpay-logo.svg" alt="logo afterpay" /> with
               10 interest-free installments
             </p>
-            <button class="button">Buy now pay later</button>
+            <a href="#" class="button">Buy now pay later</a>
+            <div class="confirm">
+              <div class="confirm__head">
+                <img src="./images/afterpay-logo.svg" alt="logo afterplay" />
+                <button class="menu">
+                  <img src="./images/close.png" alt="close" />
+                </button>
+              </div>
+              <p>Make easy monthly payments</p>
+              <table class="confirm__table">
+                <caption>
+                  <span>£9.99/mo.</span>
+                  <span>10 months</span>
+                </caption>
+                <thead>
+                  <tr>
+                    <th>APR</th>
+                    <th>Interest</th>
+                    <th>Total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>0%</td>
+                    <td>£0</td>
+                    <td>£89.00</td>
+                  </tr>
+                </tbody>
+              </table>
+              <button class="button">Confirm to checkout</button>
+            </div>
           </div>
           <div class="condition">
             <p>In stock, ready for ship</p>
@@ -207,26 +212,29 @@
           </div>
         </div>
       </section>
-
       <section class="free-shipping">
         <div class="container">
           <h3 class="free-shipping__title">Free shipping in United Kingdom</h3>
-          <p class="free-shipping__partners">
-            <img src="./images/dhl.png" alt="logo dhl" />
-            <img src="./images/dpd.png" alt="logo dpd" />
-            <img src="./images/fedex.png" alt="logo fedex" />
-            <img src="./images/ups.png" alt="logo ups" />
-          </p>
-          <p class="free-shipping__desc">
-            All purchases are shipped from our warehouse in United Kingdom and
-            are fully insured with a tracking number. Tracked delivery between
-            2-4 days in United Kingdom + Free Delivery.
-          </p>
+          <button class="menu">
+            <img src="./images/arrow-top.png" alt="close/show" />
+          </button>
+          <div class="free-shipping__content">
+            <p class="free-shipping__partners">
+              <img src="./images/dhl.png" alt="logo dhl" />
+              <img src="./images/dpd.png" alt="logo dpd" />
+              <img src="./images/fedex.png" alt="logo fedex" />
+              <img src="./images/ups.png" alt="logo ups" />
+            </p>
+            <p class="free-shipping__desc">
+              All purchases are shipped from our warehouse in United Kingdom and
+              are fully insured with a tracking number. Tracked delivery between
+              2-4 days in United Kingdom + Free Delivery.
+            </p>
+          </div>
         </div>
       </section>
     </main>
-
-    <footer class="footer">
+    <footer id="footer" class="footer">
       <div class="container">
         <p>*Information is not a public offer</p>
         <p>
@@ -260,7 +268,7 @@
           like to participate without signing up for a three-day trial at
           Toolsandtoys, please email.
         </p>
-        <a href="#" class="button button--small">Read less</a>
+        <button class="button button--small">Read more</button>
       </div>
     </footer>
   </body>
